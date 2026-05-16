@@ -1,27 +1,13 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
-  "devDependencies": {
-    "npm-run-all": "^4.1.5",
-    "prettier": "^1.18.2",
-    "prettier-plugin-svelte": "^0.6.0",
-    "rollup": "^1.10.1",
-    "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-svelte": "^5.0.3",
-    "rollup-plugin-terser": "^4.0.4",
-    "svelte": "^3.0.0"
-  },
-  "dependencies": {
-    "sirv-cli": "^0.4.4"
-  },
+  "name": "viljami.io",
+  "version": "2.0.0",
+  "description": "Company site for Viljami.io / MRR Copilot Oy. Plain HTML + CSS, no build step.",
+  "private": true,
   "scripts": {
-    "build": "rollup -c",
-    "autobuild": "rollup -c -w",
-    "dev": "run-p start:dev autobuild",
-    "start": "sirv public --single",
-    "start:dev": "sirv public --single --dev",
-    "deploy": "npm run build && aws s3 sync --delete ./public s3://personal-homepage-static"
+    "start": "serve --listen 5173 --no-clipboard public",
+    "dev": "serve --listen 5173 --no-clipboard public"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
   }
 }
