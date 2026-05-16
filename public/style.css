@@ -69,6 +69,8 @@ a:hover {
    ============================================================ */
 
 .card {
+  position: relative;
+  overflow: hidden;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -76,6 +78,40 @@ a:hover {
   padding: clamp(1.75rem, 4vw, 3rem);
   max-width: 640px;
   width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.45s cubic-bezier(0.22, 0.8, 0.22, 1);
+  will-change: transform;
+}
+
+.card > *:not(.card__watermark) {
+  position: relative;
+  z-index: 1;
+}
+
+.card__watermark {
+  position: absolute;
+  right: -12%;
+  bottom: -28%;
+  width: 70%;
+  height: auto;
+  pointer-events: none;
+  opacity: 0.05;
+  color: var(--fg);
+  transition: transform 0.45s cubic-bezier(0.22, 0.8, 0.22, 1);
+  z-index: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card__watermark {
+    opacity: 0.08;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card__watermark {
+    transition: none;
+  }
 }
 
 .hero {
