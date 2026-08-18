@@ -181,7 +181,10 @@ const renderPost = (post) => {
   const body = `
   <main class="card feed-card post">
     <header class="hero">
-      <p class="eyebrow"><a href="/feed/">&larr; Viljami.io / Feed</a></p>
+      <a class="post__byline" href="/feed/">
+        <img class="post__byline-avatar" src="/assets/viljami.jpg" alt="Viljami Kuosmanen" width="32" height="32" />
+        <span class="post__byline-name">Viljami Kuosmanen</span>
+      </a>
       <h1>${escapeHtml(post.title)}</h1>
       <p class="title">${formatDate(post.date)}</p>
     </header>
