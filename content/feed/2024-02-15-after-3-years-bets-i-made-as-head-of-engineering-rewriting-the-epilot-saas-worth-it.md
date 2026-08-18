@@ -5,6 +5,7 @@ description: "In this post, we take a look back at some of the most influential 
 tags: ["saas", "react", "aws", "career"]
 canonical: "https://dev.to/epilot/after-3-years-bets-i-made-as-head-of-engineering-rewriting-the-epilot-saas-worth-it-2bc1"
 slug: "after-3-years-bets-i-made-as-head-of-engineering-rewriting-the-epilot-saas-worth-it"
+image: "/assets/covers/after-3-years-bets-i-made-as-head-of-engineering-rewriting-the-epilot-saas-worth-it.webp"
 ---
 
 In this post, we take a look back at some of the most influential decisions I implemented early on in our SaaS rewrite journey at [epilot](https://epilot.cloud/en) and evaluate how well each one has played out after 3 years.

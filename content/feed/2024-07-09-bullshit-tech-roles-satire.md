@@ -5,6 +5,8 @@ description: "In any sufficiently well-funded or otherwise successful tech compa
 tags: ["satire", "techjobs"]
 canonical: "https://dev.to/anttiviljami/bullshit-tech-roles-satire-54f"
 slug: "bullshit-tech-roles-satire"
+image: "/assets/covers/bullshit-tech-roles-satire.webp"
+imageAlt: "Bullshit Tech Roles (satire)"
 ---
 
 In any sufficiently well-funded or otherwise successful tech company, a set of new roles will inevitably emerge—so crucial and revered by our industry that they've practically transcended the need to produce any tangible work. These roles specialize in the fine art of enabling others, in the hopes that, one day, the actual builders might be enabled enough to deliver products to customers.

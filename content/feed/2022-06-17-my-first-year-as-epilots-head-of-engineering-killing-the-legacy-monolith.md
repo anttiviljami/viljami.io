@@ -5,6 +5,8 @@ description: "This post is a personal account of my experience at epilot.cloud a
 tags: ["leadership", "career", "serverless"]
 canonical: "https://dev.to/epilot/my-first-year-as-epilots-head-of-engineering-killing-the-legacy-monolith-25c2"
 slug: "my-first-year-as-epilots-head-of-engineering-killing-the-legacy-monolith"
+image: "/assets/covers/my-first-year-as-epilots-head-of-engineering-killing-the-legacy-monolith.webp"
+imageAlt: "First year as Head of Engineering @epilot - Killing the Legacy Monolith"
 ---
 
 This post is a personal account of my experience at [epilot.cloud](https://epilot.cloud/en/) and our journey rebuilding our legacy Java monolith SaaS from the ground up with AWS, serverless and microfrontends, mostly during 2021.

@@ -5,6 +5,8 @@ description: "Last week, Vercel published research showing that giving coding ag
 tags: ["ai", "agents", "coding", "documentation"]
 canonical: "https://dev.to/epilot/we-made-coding-agents-actually-reliable-by-fixing-one-thing-525b"
 slug: "we-made-coding-agents-actually-reliable-by-fixing-one-thing"
+image: "/assets/covers/we-made-coding-agents-actually-reliable-by-fixing-one-thing.webp"
+imageAlt: "We Made Coding Agents Actually Reliable By Fixing One Thing"
 ---
 
 Last week, Vercel published [research showing that giving coding agents a compact index of your documentation dramatically outperforms letting them search for answers on demand](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals). Their eval results: 100% task success rate with the map approach, versus only 79% when agents had to actively look things up.

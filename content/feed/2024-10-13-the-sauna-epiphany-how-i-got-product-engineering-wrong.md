@@ -5,6 +5,8 @@ description: "If you've seen my posts lately you've probably seen a lot of talk 
 tags: ["product", "ai", "sauna"]
 canonical: "https://dev.to/epilot/the-sauna-epiphany-how-i-got-product-engineering-wrong-35jg"
 slug: "the-sauna-epiphany-how-i-got-product-engineering-wrong"
+image: "/assets/covers/the-sauna-epiphany-how-i-got-product-engineering-wrong.webp"
+imageAlt: "How I Got Product Engineering Wrong"
 ---
 
 If you've seen my posts lately you've probably seen a lot of talk about _Product Engineers_: software engineers who talk in customer problems and take pride in the products they build, not only the code and technologies they use.

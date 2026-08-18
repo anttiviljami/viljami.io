@@ -5,6 +5,8 @@ description: "Ever since open-sourcing our core Engineering Principles back in J
 tags: ["discuss", "discord", "community"]
 canonical: "https://dev.to/epilot/how-we-do-engineering-at-epilot-nai"
 slug: "how-we-do-engineering-at-epilot"
+image: "/assets/covers/how-we-do-engineering-at-epilot.webp"
+imageAlt: "How we do engineering @ epilot"
 ---
 
 Ever since open-sourcing our core [Engineering Principles](https://github.com/epilot-dev/engineering-principles) back in January 2021, I regularly get asked by candidates how and if the principles really work in practice at epilot.

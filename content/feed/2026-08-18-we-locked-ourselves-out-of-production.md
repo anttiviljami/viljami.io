@@ -5,6 +5,8 @@ description: "A few months back an engineer was setting up a build pipeline with
 tags: ["security", "aws", "ai", "agents"]
 canonical: "https://dev.to/epilot/we-locked-ourselves-out-of-production-1n22"
 slug: "we-locked-ourselves-out-of-production"
+image: "/assets/covers/we-locked-ourselves-out-of-production.webp"
+imageAlt: "We Locked Ourselves Out of Production"
 ---
 
 A few months back an engineer was setting up a build pipeline with an AI coding agent. The agent held production AWS credentials. It created a CloudFormation stack in production, then "cleaned up" by deleting it. Straight in prod, outside CI/CD.

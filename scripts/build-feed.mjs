@@ -86,6 +86,7 @@ const layout = ({
   ogType = "website",
   body,
   hasTwitter = false,
+  image,
 }) => `<!doctype html>
 <html lang="en">
 
@@ -100,6 +101,7 @@ const layout = ({
   <meta property="og:description" content="${escapeHtml(description)}" />
   <meta property="og:type" content="${ogType}" />
   <meta property="og:url" content="${SITE_URL}${canonicalPath}" />
+  ${image ? `<meta property="og:image" content="${SITE_URL}${image}" />` : ""}
   <link rel="canonical" href="${SITE_URL}${canonicalPath}" />
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="alternate icon" href="/assets/favicon.png" type="image/png" />
@@ -168,6 +170,14 @@ const renderIndex = (posts) => {
 };
 
 const renderPost = (post) => {
+  const cover = post.image
+    ? `
+    <figure class="post__cover">
+      <img src="${post.image}" alt="${escapeHtml(post.imageAlt || "")}" />
+      ${post.imageAlt ? `<figcaption>${escapeHtml(post.imageAlt)}</figcaption>` : ""}
+    </figure>`
+    : "";
+
   const body = `
   <main class="card feed-card post">
     <header class="hero">
@@ -175,7 +185,7 @@ const renderPost = (post) => {
       <h1>${escapeHtml(post.title)}</h1>
       <p class="title">${formatDate(post.date)}</p>
     </header>
-
+${cover}
     <article class="post__body">
 ${post.html}
     </article>
@@ -197,6 +207,7 @@ ${post.html}
     canonicalPath: `/feed/${post.slug}/`,
     ogType: "article",
     hasTwitter: post.hasTwitter,
+    image: post.image,
     body,
   });
 };

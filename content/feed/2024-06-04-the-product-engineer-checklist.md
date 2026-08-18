@@ -5,6 +5,8 @@ description: "How to Think Like a Product Engineer"
 tags: ["career", "product", "engineer"]
 canonical: "https://dev.to/epilot/the-product-engineer-checklist-469d"
 slug: "the-product-engineer-checklist"
+image: "/assets/covers/the-product-engineer-checklist.webp"
+imageAlt: "The Product Engineer Checklist"
 ---
 
 *Download the PDF at [productengineer.org](https://productengineer.org)*

@@ -5,6 +5,8 @@ description: "Kent C. Dodds recently wrote a very interesting post calling an en
 tags: ["react", "testing", "openapi", "mock"]
 canonical: "https://dev.to/epilot/testing-react-with-jest-and-openapi-mocks-8gc"
 slug: "testing-react-with-jest-and-openapi-mocks"
+image: "/assets/covers/testing-react-with-jest-and-openapi-mocks.webp"
+imageAlt: "Testing React With Jest and OpenAPI mocks"
 ---
 
 Kent C. Dodds recently wrote a [very interesting post](https://kentcdodds.com/blog/stop-mocking-fetch) calling an end to mocking `window.fetch` when testing React applications:
