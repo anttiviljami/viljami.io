@@ -16,13 +16,13 @@ Quick recap of how we got here.
 
 ## A brief history
 
-I joined epilot in October 2020 as a cloud engineer and took over as Head of Engineering in May 2021. We were about 10 in-house engineers. Our product was a Java monolith built on a 3rd-party low-code platform (Axon Ivy) we didn't even own the source code to.
+I joined epilot in October 2020 as a cloud engineer and took over as Head of Engineering in May 2021. We were about 10 in-house engineers. Our product was a Java monolith built on a 3rd-party low-code platform we didn't even own the source code to.
 
 My job: build better software, faster.
 
 The first few years were heavy on technical and people leadership. I wrote our first Engineering Principles, introduced RFCs, established our weekly product demos, and championed the 360 plan to rewrite the entire product on serverless AWS with microfrontends.
 
-I led the original 360 strike team and drove the new architecture from the front. We killed Ivy. We managed to grow MRR fast while migrating customers. Today we ship 150+ times a week to production. The in-house engineering team has grown from 10 to over 40 senior product engineers from more than 10 countries. No management layer. No platform team. No ops team.
+I led the original 360 strike team and drove the new architecture from the front. We killed the legacy platform. We managed to grow MRR fast while migrating customers. Today we ship 150+ times a week to production. The in-house engineering team has grown from 10 to over 40 senior product engineers from more than 10 countries. No management layer. No platform team. No ops team.
 
 I took pride in keeping our headcount relatively low. Raise the bar, hire fewer, expect more out of each. Product Engineer Mindset.
 

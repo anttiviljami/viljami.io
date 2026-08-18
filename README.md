@@ -47,7 +47,6 @@ public/
 ├── impressum.html    ← legal info (MRR Copilot Oy)
 ├── style.css
 ├── serve.json        ← local dev config for `serve`
-├── CNAME             ← tells GitHub Pages the custom domain is viljami.io
 ├── feed/              ← generated: index, rss.xml, one folder per post
 └── assets/
     ├── favicon.svg / favicon.png
