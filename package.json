@@ -6,7 +6,9 @@
   "scripts": {
     "start": "serve --listen 5173 --no-clipboard public",
     "dev": "serve --listen 5173 --no-clipboard public",
-    "build:feed": "node scripts/build-feed.mjs"
+    "build": "npm run build:feed && npm run build:sitemap",
+    "build:feed": "node scripts/build-feed.mjs",
+    "build:sitemap": "node scripts/build-sitemap.mjs"
   },
   "devDependencies": {
     "feed": "^6.0.0",

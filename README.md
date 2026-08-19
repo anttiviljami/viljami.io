@@ -19,15 +19,20 @@ npm start
 
 ## Writing (`/feed`)
 
-Posts live as Markdown + frontmatter in `content/feed/*.md`. To add a new post, create a new file there (see existing ones for the frontmatter shape: `title`, `date`, `description`, `tags`, `slug`, optional `canonical`), then rebuild:
+Posts live as Markdown + frontmatter in `content/feed/*.md`. To add a new post, create a new file there (see existing ones for the frontmatter shape: `title`, `date`, `description`, `tags`, `slug`, optional `canonical`, `image`, `imageAlt`), then rebuild:
 
 ```sh
-npm run build:feed
+npm run build
 ```
 
-This regenerates `public/feed/**` (index, one folder per post, `rss.xml`) from `content/feed/*.md`. Commit both the source Markdown and the generated `public/feed/` output.
+This runs both build scripts in order:
 
-Email subscriptions go through [Buttondown](https://buttondown.email) — the subscribe form embedded on every `/feed` page posts to `https://buttondown.email/api/emails/embed-subscribe/<username>`. The username is set in `scripts/build-feed.mjs` (`BUTTONDOWN_USERNAME`); update it once a real Buttondown account exists, then `npm run build:feed` to regenerate. New posts can be cross-posted to the Buttondown newsletter manually, or by pointing Buttondown's RSS-to-email feature at `https://viljami.io/feed/rss.xml` so every new entry goes out automatically.
+- `build:feed` — regenerates `public/feed/**` (index, one folder per post, `rss.xml`) from `content/feed/*.md`
+- `build:sitemap` — regenerates `public/sitemap.xml` from the static pages plus every post in `content/feed/*.md`
+
+Run `npm run build:feed` or `npm run build:sitemap` individually if you only need one. Commit both the source Markdown and the generated `public/feed/` and `public/sitemap.xml` output.
+
+Email subscriptions go through [Buttondown](https://buttondown.email) — the subscribe form embedded on every `/feed` page posts to `https://buttondown.email/api/emails/embed-subscribe/<username>`. The username is set in `scripts/build-feed.mjs` (`BUTTONDOWN_USERNAME`); update it once a real Buttondown account exists, then `npm run build` to regenerate. New posts can be cross-posted to the Buttondown newsletter manually, or by pointing Buttondown's RSS-to-email feature at `https://viljami.io/feed/rss.xml` so every new entry goes out automatically.
 
 ## Deploy
 
@@ -39,14 +44,17 @@ The original AWS S3 + CloudFront infrastructure (`terraform.tf`) is retained for
 
 ```
 content/
-└── feed/             ← Markdown source posts (frontmatter + body)
+└── feed/                ← Markdown source posts (frontmatter + body)
 scripts/
-└── build-feed.mjs    ← generates public/feed/** from content/feed/*.md
+├── build-feed.mjs       ← generates public/feed/** from content/feed/*.md
+└── build-sitemap.mjs    ← generates public/sitemap.xml
 public/
 ├── index.html        ← main page
 ├── impressum.html    ← legal info (MRR Copilot Oy)
 ├── style.css
 ├── serve.json        ← local dev config for `serve`
+├── robots.txt        ← points crawlers at sitemap.xml
+├── sitemap.xml        ← generated: every static page + post
 ├── feed/              ← generated: index, rss.xml, one folder per post
 └── assets/
     ├── favicon.svg / favicon.png
