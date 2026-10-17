@@ -107,13 +107,11 @@ a:hover {
   background: #111;
 }
 
+.stage picture,
 .stage img {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  object-position: 55% 50%;
 }
 
 .stage figcaption {
@@ -144,10 +142,6 @@ a:hover {
 }
 
 @media (max-width: 32rem) {
-  /* Tighter crop on phones: drop the stairs and empty chairs, keep the speaker */
-  .stage img {
-    aspect-ratio: 5 / 4;
-  }
   .stage figcaption {
     font-size: 0.66rem;
     padding: 2rem 0.85rem 0.6rem;

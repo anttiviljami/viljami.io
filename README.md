@@ -60,6 +60,7 @@ public/
     ├── favicon.svg / favicon.png
     ├── checklist-cover.jpg
     ├── sdlcai-2026-*.webp   ← front-page stage photo (Juho Vepsäläinen, CC BY 4.0, edited; credited in impressum.html)
+    │                          wide 3:2 crop for desktop, `-tight-` 5:4 crop for phones
     ├── og-sdlcai-2026.jpg   ← 1200×630 social preview crop of the same photo
     ├── resume.pdf
     └── portfolio.pdf

@@ -30,10 +30,15 @@
 <body>
   <main class="card">
     <figure class="stage">
-      <img src="/assets/sdlcai-2026-1280.webp"
-        srcset="/assets/sdlcai-2026-768.webp 768w, /assets/sdlcai-2026-1280.webp 1280w"
-        sizes="(max-width: 44rem) 100vw, 640px" width="1280" height="853" fetchpriority="high"
-        alt="Viljami Kuosmanen speaking on stage at SDLCAI 2026, in front of a large presentation screen" />
+      <picture>
+        <source media="(max-width: 32rem)"
+          srcset="/assets/sdlcai-2026-tight-640.webp 640w, /assets/sdlcai-2026-tight-1200.webp 1200w"
+          sizes="100vw" width="1200" height="960" />
+        <img src="/assets/sdlcai-2026-1280.webp"
+          srcset="/assets/sdlcai-2026-768.webp 768w, /assets/sdlcai-2026-1280.webp 1280w"
+          sizes="(max-width: 44rem) 100vw, 640px" width="1280" height="853" fetchpriority="high"
+          alt="Viljami Kuosmanen speaking on stage at SDLCAI 2026, in front of a large presentation screen" />
+      </picture>
       <figcaption>
         <span>SDLCAI 2026 · Espoo</span>
         <span>Photo: <a href="https://www.sdlcai.org/photos/" target="_blank" rel="noopener">Juho Vepsäläinen</a> ·
