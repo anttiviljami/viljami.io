@@ -36,7 +36,9 @@ Email subscriptions go through [Buttondown](https://buttondown.email) — the su
 
 ## Deploy
 
-The `public/` directory is the deploy artifact. CI publishes it to GitHub Pages on every push to `master` (see `.github/workflows/ci.yml`). DNS for `viljami.io` points to the Pages site.
+The `public/` directory is the deploy artifact. CI publishes it to GitHub Pages on every push to `master` (see `.github/workflows/ci.yml`). DNS for `viljami.io` points to the Pages site. To redeploy without a commit, run the CI workflow manually from the Actions tab.
+
+CI pushes to `anttiviljami/anttiviljami.github.io` over SSH. The private key lives in this repo's `DEPLOY_KEY` Actions secret, and its public half is a write-enabled deploy key on the Pages repo. To rotate it, generate a new ed25519 keypair, replace both, and delete the old deploy key.
 
 The original AWS S3 + CloudFront infrastructure (`terraform.tf`) is retained for reference but is no longer the active deploy target.
 
