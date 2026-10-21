@@ -442,18 +442,6 @@ h1 {
   border-bottom: 1px solid var(--fg-faint);
 }
 
-.badge {
-  display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.1rem 0.5rem;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  border-radius: 999px;
-  background: var(--bg);
-  color: var(--fg-muted);
-  border: 1px solid var(--border);
-}
-
 @media (max-width: 36rem) {
   .meta dl > div {
     grid-template-columns: 1fr;
