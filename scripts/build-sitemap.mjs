@@ -18,6 +18,7 @@ const mtimeOf = (path) => isoDate(statSync(path).mtime);
 
 const staticPages = [
   { path: "/", file: join(PUBLIC_DIR, "index.html") },
+  { path: "/open-source/", file: join(PUBLIC_DIR, "open-source/index.html") },
   { path: "/impressum.html", file: join(PUBLIC_DIR, "impressum.html") },
   { path: "/feed/", file: join(PUBLIC_DIR, "feed/index.html") },
 ];
