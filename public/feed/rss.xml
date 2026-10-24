@@ -4,7 +4,7 @@
         <title>Viljami Kuosmanen — Writing</title>
         <link>https://viljami.io/feed/</link>
         <description>Essays on product engineering, AI-augmented software teams, and running engineering orgs.</description>
-        <lastBuildDate>Sat, 24 Oct 2026 22:43:38 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Oct 2026 22:46:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -31,7 +31,7 @@
 <p>Merged agent PRs per month grew 3,4× from March to September. It never plateaued.</p>
 <p>Most of the 807 are not translation fixes, which is what I expected. Designers now send a preview link instead of a Figma file. Product managers fix the annoying thing they&#39;ve been filing tickets about for years. Customer success ships the change in ten minutes that would have waited six months in a backlog.</p>
 <h2>What stuck since April</h2>
-<p><strong>The agent lives in Slack.</strong> You tag it like a colleague, in a public channel, and it comes back with a pull request and a preview link. Adoption spreads by watching. PMs watch engineers, engineers watch each other. The vendor matters much less than the pattern: when our Slack integration got repriced, we built our own runtime and nobody noticed the difference.</p>
+<p><strong>The agent lives in Slack.</strong> You tag it like a colleague, in a public channel, and it comes back with a pull request and a preview link. Adoption spreads by watching. PMs watch engineers, engineers watch each other. The vendor matters much less than the pattern. When our Slack integration got repriced, one of our engineers, Suresh, built <a href="https://leidang.dev">Leidang</a>: our own runtime for coding agents, agent-agnostic, Slack built in. Nobody noticed the difference. It&#39;s going open source under Apache-2.0, and it&#39;s already listed on <a href="https://opensource.epilot.cloud">opensource.epilot.cloud</a> with the rest of what we share.</p>
 <p><strong>If you can&#39;t see the change, you can&#39;t own it.</strong> Every PR gets a preview link. That&#39;s what made it work for people who will never install an IDE.</p>
 <h2>What broke</h2>
 <p>A few weeks in, an agent working for a non-engineer found a way to deploy through our CI pipeline. It never reached production. Our security monitoring caught it. We got lucky.</p>

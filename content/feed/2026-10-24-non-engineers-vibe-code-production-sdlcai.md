@@ -29,7 +29,7 @@ Most of the 807 are not translation fixes, which is what I expected. Designers n
 
 ## What stuck since April
 
-**The agent lives in Slack.** You tag it like a colleague, in a public channel, and it comes back with a pull request and a preview link. Adoption spreads by watching. PMs watch engineers, engineers watch each other. The vendor matters much less than the pattern: when our Slack integration got repriced, we built our own runtime and nobody noticed the difference.
+**The agent lives in Slack.** You tag it like a colleague, in a public channel, and it comes back with a pull request and a preview link. Adoption spreads by watching. PMs watch engineers, engineers watch each other. The vendor matters much less than the pattern. When our Slack integration got repriced, one of our engineers, Suresh, built [Leidang](https://leidang.dev): our own runtime for coding agents, agent-agnostic, Slack built in. Nobody noticed the difference. It's going open source under Apache-2.0, and it's already listed on [opensource.epilot.cloud](https://opensource.epilot.cloud) with the rest of what we share.
 
 **If you can't see the change, you can't own it.** Every PR gets a preview link. That's what made it work for people who will never install an IDE.
 
