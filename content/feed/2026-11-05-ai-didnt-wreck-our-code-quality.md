@@ -16,6 +16,12 @@ So we counted.
 
 This week we published the epilot Engineering Report 2026. Every number in it comes straight from our own GitLab, Datadog, Jira and Zendesk. No surveys asking engineers how productive they feel. No vendor case study.
 
+<div style="position:relative;padding-bottom:62%;height:0;overflow:hidden;margin:1.5rem 0;border:1px solid rgba(127,127,127,.25);border-radius:8px">
+<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" src="/assets/ai-didnt-wreck-our-code-quality/epilot-engineering-report-2026.pdf#view=FitH" title="epilot Engineering Report 2026 (PDF)" loading="lazy"></iframe>
+</div>
+
+[Open the full report (PDF, 11 slides)](/assets/ai-didnt-wreck-our-code-quality/epilot-engineering-report-2026.pdf)
+
 This is the long version: what the numbers say, how we measured them and what I think actually made the difference.
 
 ![Headline numbers: 2,4x PRs merged every week, 244 production deploys in an average week, 2 customer-facing SEV-1 incidents in 2026, 22 people outside engineering now contribute code](/assets/ai-didnt-wreck-our-code-quality/01-kpis.webp)
@@ -181,5 +187,3 @@ If your engineers can't ship without waiting on a platform team, an ops queue or
 Context over prompts. Guardrails over gatekeepers. Engineers in the loop where it matters: at merge and at deploy.
 
 It worked for us. Your mileage will vary, but probably less than you think.
-
-The full report, with every chart and how we measured it all: [epilot Engineering Report 2026 (PDF)](/assets/ai-didnt-wreck-our-code-quality/epilot-engineering-report-2026.pdf)
