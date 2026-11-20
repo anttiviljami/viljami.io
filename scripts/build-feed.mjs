@@ -174,7 +174,7 @@ const renderPost = (post) => {
     ? `
     <figure class="post__cover">
       <img src="${post.image}" alt="${escapeHtml(post.imageAlt || "")}" />
-      ${post.imageAlt ? `<figcaption>${escapeHtml(post.imageAlt)}</figcaption>` : ""}
+      ${post.imageAlt ? `<figcaption>${post.imageLink ? `<a href="${escapeHtml(post.imageLink)}">${escapeHtml(post.imageAlt)}</a>` : escapeHtml(post.imageAlt)}</figcaption>` : ""}
     </figure>`
     : "";
 

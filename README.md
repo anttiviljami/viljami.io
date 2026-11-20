@@ -19,7 +19,7 @@ npm start
 
 ## Writing (`/feed`)
 
-Posts live as Markdown + frontmatter in `content/feed/*.md`. To add a new post, create a new file there (see existing ones for the frontmatter shape: `title`, `date`, `description`, `tags`, `slug`, optional `canonical`, `image`, `imageAlt`), then rebuild:
+Posts live as Markdown + frontmatter in `content/feed/*.md`. To add a new post, create a new file there (see existing ones for the frontmatter shape: `title`, `date`, `description`, `tags`, `slug`, optional `canonical`, `image`, `imageAlt`, `imageLink` to make the cover caption a link), then rebuild:
 
 ```sh
 npm run build
