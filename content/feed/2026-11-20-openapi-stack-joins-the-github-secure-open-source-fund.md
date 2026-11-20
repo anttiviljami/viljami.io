@@ -5,7 +5,8 @@ description: "Three weeks with GitHub Security Lab: 1005 Dependabot alerts down 
 tags: ["open-source", "security", "openapi", "github"]
 slug: "openapi-stack-joins-the-github-secure-open-source-fund"
 image: "/assets/covers/openapi-stack-joins-the-github-secure-open-source-fund.webp"
-imageAlt: "openapi-stack and the GitHub Secure Open Source Fund"
+imageAlt: "GitHub Secure Open Source Fund"
+imageLink: "https://github.com/open-source/github-secure-open-source-fund"
 ---
 
 openapi-stack is a set of open source libraries for building and consuming REST APIs straight from an OpenAPI definition: openapi-backend, openapi-client-axios, openapicmd and a few smaller ones. They're [used by teams at](https://openapistack.co/users/) Microsoft, GitHub, IBM, Red Hat, SAP, AWS, Notion, Intel and Fastly. Those are only the ones I can see in public. Most of the usage is on the critical path of APIs inside products and companies I'll never see.
